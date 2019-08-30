@@ -1,7 +1,7 @@
 package com.z3t4.animeapp.Model;
 
 public class Noticia {
-    String mTitulo, mCreador, mFecha, mLink, mImagen, mDescripcion, mYoutubeThumb;
+    String mTitulo, mCreador, mFecha, mLink, mDescripcion, mThumb;
 
     public String getmTitulo() {
         return mTitulo;
@@ -35,14 +35,6 @@ public class Noticia {
         this.mLink = mLink;
     }
 
-    public void setmImagen(String mImagen) {
-        this.mImagen = mImagen;
-    }
-
-    public String getmImagen() {
-        return mImagen;
-    }
-
     public void setmDescripcion(String mDescripcion) {
         this.mDescripcion = mDescripcion;
     }
@@ -51,9 +43,9 @@ public class Noticia {
         return mDescripcion;
     }
 
-    public String getmYoutubeThumb() { return mYoutubeThumb; }
+    public String getmThumb() { return mThumb; }
 
-    public void setmYoutubeThumb(String mYoutubeThumb) { this.mYoutubeThumb = mYoutubeThumb; }
+    public void setmThumb(String mThumb) { this.mThumb = mThumb; }
 }
 
 

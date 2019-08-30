@@ -140,8 +140,7 @@ public class NoticiasFragment extends Fragment {
                             } else if (cureent.getNodeName().equalsIgnoreCase("link")) {
                                 noticia.setmLink(cureent.getTextContent());
                             } else if (cureent.getNodeName().equalsIgnoreCase("content:encoded")) {
-                                noticia.setmImagen(cureent.getTextContent());
-                                noticia.setmYoutubeThumb(cureent.getTextContent());
+                                noticia.setmThumb(cureent.getTextContent());
                             } else if (cureent.getNodeName().equalsIgnoreCase("description")) {
                                 noticia.setmDescripcion(cureent.getTextContent());
                             }

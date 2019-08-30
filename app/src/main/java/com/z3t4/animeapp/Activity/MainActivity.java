@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.recientes);
 
         confetti = findViewById(R.id.dialog_confetti);
         reportarError = findViewById(R.id.reportar_error);

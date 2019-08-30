@@ -52,22 +52,40 @@ public class NoticiasAdapter extends RecyclerView.Adapter<NoticiasAdapter.MyView
         holder.mFecha.setText(actual.getmFecha().substring(3,17).replace("," , " ").replace("Aug", "de Agosto del").replace("Sep","de Septiembre del"));
 
         for (int i = 0 ; i < noticias.size() ; i++);{
-            if (actual.getmImagen().contains("<img")) {
+
+            if (actual.getmThumb().contains("<img")) {
                 holder.mImagen.setVisibility(View.VISIBLE);
-                String imagenFinal = actual.getmImagen()
-                        .substring(actual.getmImagen().indexOf("<img src=\""),
-                                actual.getmImagen().indexOf("\" alt")).substring(10).replace("http", "https")
+                String imagenFinal = actual.getmThumb()
+                        .substring(actual.getmThumb().indexOf("<img src=\""),
+                                actual.getmThumb().indexOf("\" alt")).substring(10).replace("http", "https")
                         .replaceAll("httpss", "https");
                     Picasso.with(ctx).load(imagenFinal).into(holder.mImagen);
-            } else if (actual.getmYoutubeThumb().contains("\" src=\"")) {
-                if (actual.getmImagen().contains("twitter-tweet")){
+
+                    System.out.println(imagenFinal);
+
+            } else if (actual.getmThumb().contains("\" src=\"")) {
+
+                if (actual.getmThumb().contains("youtube")) {
+                String getYoutubeThumb = actual.getmThumb().substring(actual.getmThumb().indexOf("\" src=\"")
+                        , actual.getmThumb().indexOf("?")).substring(37);
+                String youtubeThumbFinal = "https://img.youtube.com/vi/" + getYoutubeThumb + "/0.jpg";
+                Picasso.with(ctx).load(youtubeThumbFinal).resize(400, 320).into(holder.mImagen);
+
+                    System.out.println(youtubeThumbFinal);
+
+                } else if (actual.getmThumb().contains("dailymotion")) {
+                    String getDailymotionThumb = actual.getmThumb().substring(actual.getmThumb().indexOf("\" src=\"")
+                            , actual.getmThumb().indexOf("\" a")).substring(47);
+                    String dailymotionThumbFinal = "https://www.dailymotion.com/thumbnail/video/" + getDailymotionThumb;
+                    Picasso.with(ctx).load(dailymotionThumbFinal).resize(400, 320).into(holder.mImagen);
+
+                    System.out.println(dailymotionThumbFinal);
+
+                } else if (actual.getmThumb().contains("<center>")) {
                     Picasso.with(ctx).cancelRequest(holder.mImagen);
                     holder.mImagen.setImageResource(R.drawable.twitter_content);
-                } else {
-                String getYoutubeThumb = actual.getmYoutubeThumb().substring(actual.getmYoutubeThumb().indexOf("\" src=\"")
-                        , actual.getmYoutubeThumb().indexOf("?")).substring(37);
-                String youtubeThumbFinal = "https://img.youtube.com/vi/" + getYoutubeThumb + "/0.jpg";
-                Picasso.with(ctx).load(youtubeThumbFinal).resize(400, 320).into(holder.mImagen);}
+                    System.out.println("Twitter contenido");}
+
             } else { holder.mImagen.setVisibility(View.GONE);
                 Picasso.with(ctx).cancelRequest(holder.mImagen); } }
 
@@ -92,11 +110,12 @@ public class NoticiasAdapter extends RecyclerView.Adapter<NoticiasAdapter.MyView
     public int getItemCount() {
         try {
             if (noticias.size() > 0) {
-                System.out.println("contiene objetos");
+              //  System.out.println("contiene objetos");
                 return noticias.size();
             }
         } catch (NullPointerException e) {
-            System.out.println("aaaaaaaaaaaaaaaaaaaaaa");}
+            //System.out.println("No contiene objetos... roto");
+            }
         return getItemCount();
     }
 
