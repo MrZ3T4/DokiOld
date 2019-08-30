@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Doki</string>
+
+    <string name="toolbar_titlePart1">Doki</string>
+    <string name="reciente">Reciente</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="manga">Explorar</string>
+    <string name="noticias">Noticias</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="Apoyar">Premium</string>
+    <string name="emoji">Hecho con &#x1F32E; en México</string>
+    <string name="animedesc">Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio. Para empeorar las cosas, su hermana menor Nezuko, la única superviviente de la masacre, ha sufrido una transformación en demonio. Destrozado por los acontecimientos Tanjiro decide convertirse en un cazador de demonios para poder devolver a su hermana a la normalidad y matar al demonio que masacró a su familia.</string>
+
+    <string name="Sin_Coleccion">Crea una colección</string>
+    <string name="Sin_Coleccion_Desc">Busca un clásico o mira un estreno y agregalos a tu colección </string>
+    <string name="Button_explorar">Explorar</string>
+
+    <string name="Sin_Favoritos">Aqui no hay nada...</string>
+    <string name="Sin_Favoritos_Desc">Agrega animes a tu lista de favoritos y aparecerán justo aquí</string>
+
+    <string name="Sin_Conexion">Sin conexión</string>
+    <string name="Sin_Conexion_Desc">No se estableció una conexión, compruébala e intentalo más tarde</string>
+
+    <string name="Sin_Historial">Sin historial</string>
+    <string name="Sin_Historial_Desc">Todos los episodios que visualizes aparecerán justo aquí</string>
+
+    <string-array name="Theme_options">
+        <item>Claro</item>
+        <item>Oscuro</item>
+        <item>Negro</item>
+    </string-array>
+
+    <string-array name="Theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Accent_options">
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+    </string-array>
+
+    <string-array name="Accent_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Spinner_episodes">
+        <item>Ascendente</item>
+        <item>Descendente</item>
+    </string-array>
+
+    <string-array name="SpinnerEpisodes_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

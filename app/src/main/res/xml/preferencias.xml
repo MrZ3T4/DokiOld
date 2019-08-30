@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Personalización">
+        <ListPreference
+            android:key="Tema_preference"
+            android:title="Tema de la interfaz"
+            android:summary="%s"
+            android:entries="@array/Theme_options"
+            android:defaultValue="0"
+            android:entryValues="@array/Theme_values"/>
+
+        <ListPreference
+            android:key="Acento_preference"
+            android:title="Color de acento"
+            android:summary="%s"
+            android:entries="@array/Accent_options"
+            android:defaultValue="0"
+            android:entryValues="@array/Accent_values"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Información">
+        <Preference
+            android:title="Versión"
+            android:summary="Alpha 0.0.1"
+            android:selectable="false">
+        </Preference>
+    </PreferenceCategory>
+
+<PreferenceCategory android:title="Equipo">
+
+    <Preference
+        android:title="Z3T4"
+        android:summary="Desarrollador"
+        android:icon="@drawable/developer">
+    </Preference>
+    <Preference
+        android:title="Wolf_Ranger"
+        android:summary="Editor"
+        android:icon="@drawable/wolf">
+    </Preference>
+</PreferenceCategory>
+
+</PreferenceScreen>

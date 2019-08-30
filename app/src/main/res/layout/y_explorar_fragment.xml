@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/ytest_explorar_fragment">
+        </include>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_gravity="start"
+                    android:background="#ff6600">
+                </View>
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="end"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/one" />
+
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/gradient_image_anime">
+                </View>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anime"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"/>
+
+                <TextView
+
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Disfruta de las magníficas series animadas por famosos estudios de animación"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="30dp"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_gravity="start"
+                    android:background="#cc0000">
+                </View>
+
+                <ImageView
+
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="end"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/seven" />
+
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/gradient_image_manga">
+                </View>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manga"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="30dp"/>
+
+                <TextView
+
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Mira el origen de obras populares y otras miles de historias interesantes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="30dp"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_effect">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="start"
+                        android:background="#24248f">
+                    </View>
+
+                    <ImageView
+
+                        android:layout_width="200dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="end"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/five"/>
+
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/gradient_image_hentai">
+                    </View>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hentai"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="30dp"/>
+
+                    <TextView
+
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="Sin waifus no hay paraíso"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginStart="30dp"/>
+
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

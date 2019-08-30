@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/explorar_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:paddingStart="90dp"
+        app:tabMode="scrollable"
+        app:tabIndicatorFullWidth="false"
+        app:tabTextAppearance="@style/CustomTextAppearance."
+        app:tabIndicator="@drawable/tab_indicator_corner">
+
+        <com.google.android.material.tabs.TabItem
+        android:id="@+id/anime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/peliculas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/explorar_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

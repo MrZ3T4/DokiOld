@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimaryDark">#b80056</color>
+
+    <!-- Color de acento -->
+    <color name="color_Accent">#ff0000</color>
+
+    <!-- Color de fondo de la aplicación -->
+    <color name="Backgound_Light">#FFFFFF</color>
+    <color name="Background_Night">#333333</color>
+    <color name="Background_Dark">#000000</color>
+
+    <color name="Icon_Light">#000000</color>
+    <color name="Icon_Night">#FFFFFF</color>
+    <color name="Icon_Dark">#FFFFFF</color>
+
+    <color name="Toolbar_Light">#FFFFFF</color>
+    <color name="Toolbar_Night">#333333</color>
+    <color name="Toolbar_Dark">#000000</color>
+
+    <color name="Tab_Light">#FFFFFF</color>
+    <color name="Tab_Night">#333333</color>
+    <color name="Tab_Dark">#000000</color>
+
+    <color name="Text_Light">#000000</color>
+    <color name="Text_Night">#FFFFFF</color>
+    <color name="Text_Dark">#FFFFFF</color>
+
+    <color name="Subtext_Light">#000000</color>
+    <color name="Subtext_Night">#FFFFFF</color>
+    <color name="Subtext_Dark">#FFFFFF</color>
+
+</resources>

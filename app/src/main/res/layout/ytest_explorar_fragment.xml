@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_card">
+            </View>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_series"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom"
+                android:text="Series, Películas y Ova´s"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_manga">
+            </View>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/icon_manga_selected"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom"
+                android:text="Manga y Novelas Ligeras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_hentai">
+                    </View>
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icon_hentai"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="bottom"
+                        android:text="Hentai (+18)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19sp" />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_effect">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_hentai">
+                    </View>
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/icon_manga_selected"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="bottom"
+                        android:text="Doujins (+18)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19sp" />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_Accent</item>
+        <!-- Establece la barra de navigación y de estado con iconos oscuros (fondo blanco) -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/Backgound_Light</item>
+        <item name="android:navigationBarColor">@color/Backgound_Light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/Backgound_Light</item>
+        <item name="android:navigationBarColor">@color/Backgound_Light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+    </style>
+
+</resources>

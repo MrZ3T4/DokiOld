@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Backgound_Light"
+    android:id="@+id/coordinatorLayout">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/testSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                    android:layout_width="260px"
+                    android:layout_height="370px"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/kimetsu"
+                    app:siShape="@drawable/api_shape" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginEnd="25dp"
+                        android:gravity="start"
+                        android:text="Demon Slayer: Kimetsu no Yaiba"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Tipo: " />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Anime" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Estado: " />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Emisión" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:text="4.8 " />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="&#9733;" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:id="@+id/testHSV"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fadingEdgeLength="15dp"
+                        android:requiresFadingEdge="horizontal"
+
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                app:chipStrokeColor="@color/color_Accent"
+                                app:chipBackgroundColor="#ffffff"
+                                android:textColor="@color/color_Accent"
+                                app:chipStrokeWidth="1dp"
+                                android:text="Acción" />
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                app:chipStrokeColor="@color/color_Accent"
+                                app:chipBackgroundColor="#ffffff"
+                                android:textColor="@color/color_Accent"
+                                app:chipStrokeWidth="1dp"
+                                android:text="Demonios" />
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:chipStrokeColor="@color/color_Accent"
+                                app:chipStrokeWidth="1dp"
+                                app:chipBackgroundColor="#ffffff"
+                                android:textColor="@color/color_Accent"
+                                android:layout_marginStart="10dp"
+                                android:text="Sobrenatural" />
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                app:chipStrokeColor="@color/color_Accent"
+                                app:chipStrokeWidth="1dp"
+                                app:chipBackgroundColor="#ffffff"
+                                android:textColor="@color/color_Accent"
+                                android:text="Historico" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Sinopsis"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <View
+        android:layout_width="155dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"/>
+
+    <com.like.LikeButton
+        android:id="@+id/favorito_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        app:icon_size="25dp"
+        app:unlike_drawable="@drawable/icon_favoritos_unselect"
+        app:like_drawable="@drawable/icon_favoritos_selected"
+        app:anim_scale_factor="2"
+        app:circle_start_color="@color/colorPrimary"
+        app:dots_primary_color="@color/color_Accent"
+        app:dots_secondary_color="@color/colorPrimary">
+    </com.like.LikeButton>
+
+
+    <com.like.LikeButton
+        android:id="@+id/ver_algun_dia_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:icon_size="25dp"
+        app:anim_scale_factor="2"
+        app:circle_start_color="@color/colorPrimary"
+        app:dots_primary_color="@color/color_Accent"
+        app:dots_secondary_color="@color/colorPrimary"
+        app:unlike_drawable="@drawable/icon_guardado_unselect"
+        app:like_drawable="@drawable/icon_guardado_selected">
+    </com.like.LikeButton>
+
+</LinearLayout>
+
+            <TextView
+                android:id="@+id/text_animedesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/animedesc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:text="Información"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginEnd="25dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Título: "  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Kimetsu no Yaiba" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#000000"
+                        android:text="Título alternativo: "  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Blade of Demon Destruction, Demon Slayer: Kimetsu no Yaiba" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#000000"
+                        android:text="Seguidores: " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="54972" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#000000"
+                        android:text="ID: " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="3118" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Lista de Episodios"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+                <Spinner
+                    android:id="@+id/Spinner_episodes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp">
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_episodes"
+                android:layout_width="match_parent"
+                android:layout_height="688dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
