@@ -41,8 +41,6 @@ dependencies {
     implementation 'saschpe.android:customtabs:2.0.0'
     implementation 'androidx.browser:browser:1.0.0'
     implementation 'com.github.tbouron.shakedetector:library:1.0.0@aar'
-    implementation 'com.github.pepperonas:materialdialog:0.3.4'
-    implementation 'com.google.android.exoplayer:exoplayer:2.7.3'
 
 
 

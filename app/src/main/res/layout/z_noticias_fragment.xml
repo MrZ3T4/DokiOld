@@ -34,8 +34,7 @@
         android:id="@+id/recycler_news"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layoutAnimation="@anim/layout_items"
->
+        android:layoutAnimation="@anim/layout_items">
     </androidx.recyclerview.widget.RecyclerView>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </FrameLayout>
