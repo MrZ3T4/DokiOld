@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.z3t4.animeapp.Model.Noticia;
 import com.z3t4.animeapp.Adapter.NoticiasAdapter;
+import com.z3t4.animeapp.Model.Noticia;
 import com.z3t4.animeapp.R;
 
 import org.w3c.dom.Document;
@@ -63,6 +63,7 @@ public class NoticiasFragment extends Fragment {
                 actualizarContenido();
             }
         });
+
         actualizarContenido();
         return view;
     }
@@ -91,6 +92,7 @@ public class NoticiasFragment extends Fragment {
                 textnews.setVisibility(View.GONE);
                 progressBar.setVisibility(View.GONE);
             } else {
+                swipeRefreshLayout.setEnabled(false);
             recyclerView.setVisibility(View.INVISIBLE);
             textnews.setVisibility(View.VISIBLE);
             progressBar.setVisibility(View.VISIBLE);}
@@ -156,15 +158,19 @@ public class NoticiasFragment extends Fragment {
 
         @Override
         protected void onPostExecute(Void aVoid) {
+            swipeRefreshLayout.setEnabled(true);
             swipeRefreshLayout.setRefreshing(false);
+
             recyclerView.setVisibility(View.VISIBLE);
             textnews.setVisibility(View.GONE);
             progressBar.setVisibility(View.GONE);
+
             NoticiasAdapter noticiasAdapter = new NoticiasAdapter(noticias, context);
             recyclerView.setAdapter(noticiasAdapter);
+            noticiasAdapter.notifyDataSetChanged();
+
             LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(context, resId);
             recyclerView.setLayoutAnimation(animation);
-            noticiasAdapter.notifyDataSetChanged();
             super.onPostExecute(aVoid);}
     }
 }
